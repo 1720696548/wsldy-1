@@ -23,20 +23,11 @@ public class Order {
 
     private Integer type;
 
-    private double money;
+    private Double money;
 
-    private double msg;
+    private String msg;
 
     private Date time;
-
-
-    public double getMsg() {
-        return msg;
-    }
-
-    public void setMsg(double msg) {
-        this.msg = msg;
-    }
 
     public Integer getId() {
         return id;
@@ -62,12 +53,20 @@ public class Order {
         this.type = type;
     }
 
-    public double getMoney() {
+    public Double getMoney() {
         return money;
     }
 
-    public void setMoney(double money) {
+    public void setMoney(Double money) {
         this.money = money;
+    }
+
+    public String getMsg() {
+        return msg;
+    }
+
+    public void setMsg(String msg) {
+        this.msg = msg;
     }
 
     public Date getTime() {
