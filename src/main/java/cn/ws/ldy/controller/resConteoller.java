@@ -13,6 +13,6 @@ public class resConteoller {
 
     @RequestMapping("/index")
     public String index(){
-        return  "/views/index";
+        return  "views/index";
     }
 }

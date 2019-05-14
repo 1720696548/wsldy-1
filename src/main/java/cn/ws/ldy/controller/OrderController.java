@@ -41,7 +41,7 @@ public class OrderController {
         param.put("page", page);
         param.put("pageSize", map.get("pageSize"));
         model.addAttribute("echo", param);
-        return "/views/order/main";
+        return "views/order/main";
     }
 
     /**
@@ -50,9 +50,9 @@ public class OrderController {
     @RequestMapping("/addOrUpd")
     public String addOrUpd(Integer id) {
         if(id == null){
-            return "/views/order/add";
+            return "views/order/add";
         }else{
-            return "/views/order/upd";
+            return "views/order/upd";
         }
     }
     /**
