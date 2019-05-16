@@ -37,6 +37,7 @@
         <th width="100px">编号</th>
         <th width="100px">用户id</th>
         <th width="100px">类型</th>
+        <th width="100px">渠道</th>
         <th width="100px">金额</th>
         <th width="100px">备注</th>
         <th width="100px">时间</th>
@@ -50,7 +51,12 @@
         <td th:text="${query.uid}"></td>
         <td th:if="${query.type==1}" th:text="支出"></td>
         <td th:if="${query.type==2}" th:text="收入"></td>
-        <td th:text="${query.money}"></td>
+        <td th:if="${query.pay == 1}" th:text="支付宝"></td>
+        <td th:if="${query.pay == 2}" th:text="微信"></td>
+        <td th:if="${query.pay == 3}" th:text="现金"></td>
+        <td th:if="${query.pay == 4}" th:text="银行卡"></td>
+        <td th:if="${query.pay == 5}" th:text="其他"></td>
+        <td th:text="${query.money}" ></td>
         <td th:text="${query.msg}"></td>
         <td th:text="${query.time}"></td>
         <td>

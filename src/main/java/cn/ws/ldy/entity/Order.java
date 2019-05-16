@@ -1,10 +1,11 @@
 package cn.ws.ldy.entity;
 
+import java.util.Date;
+
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
 import javax.persistence.Id;
 import javax.persistence.Table;
-import java.util.Date;
 
 /**
  * @author: wangsong
@@ -28,8 +29,20 @@ public class Order {
     private String msg;
 
     private Date time;
+    
+    private Integer pay;
 
-    public Integer getId() {
+
+
+	public Integer getPay() {
+		return pay;
+	}
+
+	public void setPay(Integer pay) {
+		this.pay = pay;
+	}
+
+	public Integer getId() {
         return id;
     }
 
