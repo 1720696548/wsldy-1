@@ -10,7 +10,19 @@
     <link rel="stylesheet" href="../../layuiadmin/style/admin.css" media="all">
     <link rel="stylesheet" href="../../layuiadmin/style/login.css" media="all">
 </head>
-
+<style>
+table{
+    table-layout: fixed;
+}
+td{
+    white-space:nowrap;       
+    text-overflow: ellipsis;  
+    overflow:hidden;   
+}
+th{
+    white-space:nowrap;       
+}
+</style>
 <body class="body">
 <div style="text-align:right;width:96.8%;"><!--background:-->
     <div class="layui-form-item">
@@ -34,14 +46,14 @@
 <table class="layui-table" lay-even="" lay-skin="row">
     <thead>
     <tr>
-        <th width="100px">编号</th>
-        <th width="100px">用户id</th>
-        <th width="100px">类型</th>
-        <th width="100px">渠道</th>
-        <th width="100px">金额</th>
-        <th width="100px">备注</th>
-        <th width="100px">时间</th>
-        <th width="200px">操作</th>
+        <th width="40px">编号</th>
+        <th width="60px">用户id</th>
+        <th width="60px">类型</th>
+        <th width="60px">渠道</th>
+        <th width="60px">金额</th>
+        <th width="150px">备注</th>
+        <th width="150px">时间</th>
+        <th width="150px">操作</th>
     </tr>
     </thead>
     <tbody>
@@ -76,7 +88,7 @@
             layer.open({
                 type: 2,
                 content: ["/order/addOrUpd"],
-                area: ["400px", "360px"],
+                area: ["360px", "360px"],
                 title: ['添加记录'],
                 fixed: false,
                 //maxmin: true,
