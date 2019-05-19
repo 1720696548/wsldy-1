@@ -7,6 +7,8 @@ import javax.persistence.GeneratedValue;
 import javax.persistence.Id;
 import javax.persistence.Table;
 
+import com.fasterxml.jackson.annotation.JsonFormat;
+
 /**
  * @author: wangsong
  * QQ/WX: 1720696548
@@ -28,6 +30,7 @@ public class Order {
 
     private String msg;
 
+    @JsonFormat(pattern="yyyy-MM-dd HH:mm:ss",timezone="GMT+8")
     private Date time;
     
     private Integer pay;
